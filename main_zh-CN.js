@@ -95,7 +95,7 @@
 		var A = "/element/%s/e/js/element/element_main.js".replace("%s", h);
         if ("0" == h) {
             var B = " element %s e js element element_main.js".split(" ");
-            B[B.length - 1] = "main_lang.js";
+            B[B.length - 1] = "main_zh-CN.js";
             A = B.join("/").replace("%s", h)
         }
         if (g._cjlc) g._cjlc(g._pas + g._pah + A);
