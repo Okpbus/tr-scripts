@@ -72,43 +72,30 @@
         46 : "Language translation widgets"
     };
     var g = window.google && google.translate && google.translate._const;
-    if (g) {
-        var h;
-        a: {
-            for (var k = [], l = [""], m = 0; m < l.length; ++m) {
-                var n = l[m].split(","),
-                p = n[0];
-                if (p) {
-                    var q = Number(n[1]);
-                    if (! (!q || .1 < q || 0 > q)) {
-                        var r = Number(n[2]),
-                        t = new Date,
-                        u = 1E4 * t.getFullYear() + 100 * (t.getMonth() + 1) + t.getDate(); ! r || r < u || k.push({
-                            version: p,
-                            ratio: q,
-                            a: r
-                        })
-                    }
-                }
-            }
-            var w = 0,
-            x = window.location.href.match(/google\.translate\.element\.random=([\d\.]+)/),
-            y = Number(x && x[1]) || Math.random();
-            for (m = 0; m < k.length; ++m) {
-                var z = k[m];
-                w += z.ratio;
-                if (1 <= w) break;
-                if (y < w) {
-                    h = z.version;
-                    break a
-                }
-            }
-            h = "TE_20190506_00"
-        }
-        var A = "/element/%s/e/js/element/element_main.js".replace("%s", h);
+	if (g) {
+		var h;
+		a: {
+			for (var k = [], l = [""], m = 0; m < l.length; ++m) {
+				var n = l[m].split(","),
+				p = n[0];
+			}
+			var w = 0,
+			x = window.location.href.match(/google\.translate\.element\.random=([\d\.]+)/),
+			y = Math.random();
+			for (m = 0; m < k.length; ++m) {
+				var z = k[m];
+				 w += z.ratio;
+				if (1 <= w) break;
+				if (y < w) {
+					h = z.version;
+					break a
+				}
+			}
+		}
+		var A = "/element/%s/e/js/element/element_main.js".replace("%s", h);
         if ("0" == h) {
             var B = " element %s e js element element_main.js".split(" ");
-            B[B.length - 1] = "main.js";
+            B[B.length - 1] = "main_lang.js";
             A = B.join("/").replace("%s", h)
         }
         if (g._cjlc) g._cjlc(g._pas + g._pah + A);
@@ -124,5 +111,5 @@
         }
         e("google.translate.m", f);
         e("google.translate.v", h)
-    };
+	}
 }).call(window)
