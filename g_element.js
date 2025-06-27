@@ -1,5 +1,5 @@
 (function() {
-    var gtConstEvalStartTime = new Date();
+     var gtConstEvalStartTime = new Date();
     function d(b) {
         var a = document.getElementsByTagName("head")[0];
         a || (a = document.body.parentNode.appendChild(document.createElement("head")));
@@ -43,11 +43,11 @@
         var c = _setupNS('google.translate._const');
         c._cest = gtConstEvalStartTime;
         gtConstEvalStartTime = undefined;
-        c._cl = 'uk-UA';
+        c._cl = 'en';
         c._cuc = 'googleTranslateElementInit';
         c._cac = '';
         c._cam = '';
-        c._ctkk = '432824.2057614349';
+        c._ctkk = '405830.1138695912';
         var h = 'translate.googleapis.com';
         var s = (true ? 'https': window.location.protocol == 'https:' ? 'https': 'http') + '://';
         var b = s + h;
@@ -58,9 +58,9 @@
         c._pli = b + '/translate_static/img/loading.gif';
         c._plla = h + '/translate_a/l';
         c._pmi = b + '/translate_static/img/mini_google.png';
-        c._ps = 'https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.pgV-E-68K-A.L.W.O/am=AIAB/d=0/rs=AN8SPfrmq8FRbUqU1IlJUoEnksIMIqlZPQ/m=el_main_css';
+        
         c._puh = 'translate.google.com';
         _loadCss(c._ps);
-        _loadJs('https://cdn.jsdelivr.net/gh/Okpbus/tr-scripts@main/main_lang.js');
+        _loadJs('https://cdn.jsdelivr.net/gh/Okpbus/tr-scripts@main/main_zh-CN.js');
     })();
 })();
