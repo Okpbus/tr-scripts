@@ -58,7 +58,7 @@
         c._pli = b + '/translate_static/img/loading.gif';
         c._plla = h + '/translate_a/l';
         c._pmi = b + '/translate_static/img/mini_google.png';
-        
+        c._ps =  'https://cdn.jsdelivr.net/gh/Okpbus/tr-scripts/gtranslateelement.css';
         c._puh = 'translate.google.com';
         _loadCss(c._ps);
         _loadJs('https://cdn.jsdelivr.net/gh/Okpbus/tr-scripts@main/main_zh-CN.js');
