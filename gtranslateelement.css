@@ -39,7 +39,7 @@
 }
 
 .goog-te-gadget-simple {
-	background-color: transparent;
+	background-color: #FFF;
 	border-left: 1px solid #d5d5d5;
 	border-top: 1px solid #9b9b9b;
 	border-bottom: 1px solid #e8e8e8;
@@ -92,14 +92,13 @@
 
 .goog-te-combo,.goog-te-banner *,.goog-te-ftab *,.goog-te-menu *,.goog-te-menu2 *,.goog-te-balloon * {
 	font-family: arial;
-	font-size: 14pt;
-    color: transparent
+	font-size: 10pt;
 }
 
 .goog-te-banner {
 	margin: 0;
-	background-color: transparent;
-	overflow: hidden
+  background-color: #E4EFFB;
+  overflow: hidden;
 }
 
 .goog-te-banner img {
@@ -107,8 +106,7 @@
 }
 
 .goog-te-banner-content {
-	color: transparent !important;
-    font-size: 1px !important
+	color: #000;
 }
 
 .goog-te-banner-content img {
@@ -133,27 +131,26 @@
 }
 
 .goog-te-button div {
-	border-color: transparent;
-	border-right: 1px solid transparent;
-	border-style: solid;
-	border-width: 1px;
-	height: 32px
+	border-color: #CCC #999 #999 #CCC;
+  border-right: 1px solid #999;
+  border-style: solid;
+  border-width: 1px;
+  height: 20px;
 }
 
 .goog-te-button button {
-   background: #e5e4e2  url(//play-lh.googleusercontent.com/RKMHa4uFpbnD7W-D48X1eIJ3joSG8EidcRJNxZd6gMDtc0m83ctDCedCOcm7ww9uiQ=w280-h280) 58% 50% no-repeat;
-   background-size: 38px 34px;
-	border: none;
-	cursor: pointer;
-	height: 32px;
-	overflow: hidden;
-	margin: 0;
-	vertical-align: top;
-	white-space: nowrap
+   background: transparent;
+  border: none;
+  cursor: pointer;
+  height: 20px;
+  overflow: hidden;
+  margin: 0;
+  vertical-align: top;
+  white-space: nowrap;
 }
 
 .goog-te-button button:active {
-	background: none repeat scroll 0 0 #cccccc
+	background: #CCC;
 }
 
 .goog-te-ftab {
